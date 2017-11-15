@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+	<html>
+		<body>
+		<head>	
+			<title>Aparna | 04/06/2017</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<style type="text/css">
+			.conatiner {
+		    width: 640px; /*Container width for responsive*/
+		    height: auto;
+		    margin: 0 auto;
+		    text-align: center;
+		    background-color: #ffffff; /*White Background for desktop*/
+			}
+			.first__row {
+				width: 100%;
+				margin: 0 auto;
+				height: 110px;
+			}
+			.second__row {
+				width: 100%;
+				height: 25px;
+				margin: 0 auto;
+				margin-top: 250px;
+			}
+			.circle{
+				width: 100px;
+				height: 100px;
+				-moz-border-radius: 50px;
+				-webkit-border-radius: 50px;
+				border-radius: 50px;
+				float: left;
+				margin: 3px;
+				background-color: red;
+			}
+			.square{
+				width: 100px;
+				height: 100px;
+				-moz-border-radius: 50px;
+				-webkit-border-radius: 50px;
+				border-radius: 0px;
+				float: left;
+				margin: 3px;
+				background-color: red;
+			}
+			.red {background-color: red;}
+			.green {background-color: green;}
+			.blue {background-color: blue;}
+			.orange {background-color: orange;}
+			.yellow {background-color: yellow;}
+			.ClickCircle{
+				margin-top: 150px;
+				border-radius: 100px;
+			}
+			.opacity1 {opacity: 1;}
+			.opacity__half {opacity: 0.5;}
+			.CircleCopy{
+				font-family: sans-serif; /*Font family - Sans*/
+				width: 106px;
+				font-size: 14px;
+				font-weight: normal;
+				text-align: center;
+				float: left;
+				margin-top: 110px;
+				display: none;
+			}
+			.SquareCopy{
+				font-family: sans-serif; /*Font family - Sans*/
+				width: 106px;
+				font-size: 14px;
+				font-weight: normal;
+				text-align: center;
+				float: left;
+				margin-top: -50px;
+				display: none;
+			}			
+			.circle:hover .CircleCopy {display: block;}	
+			.square:hover .SquareCopy {display: block;}
+		
+		    /* for Circles */
+		
+            /* for Mobile phone */
+			@media screen and (max-width:640px){
+			body{
+			background-color:black;
+			}	
+			.first__row{
+			background-color:black;
+			}
+			
+			.circles{
+						width:100%;
+			}
+			.CircleTop{
+						width:100%;
+						
+			}
+			.circle red opacity1{
+							width:100%;
+			}
+			
+			
+			@media screen and (max-width:320px){
+			.container{
+			           width:320px;
+					   background-color:black;
+			}	
+			}
+			
+			/* for Tablet */
+			@media screen and (max-width:959px){
+			.container{
+			           width:100%;
+					   
+			}	
+			.circles{
+						width:50%;
+			}
+			.CircleTop{
+						width:25%;
+						
+			}
+			.circle red opacity1{
+							width:25%;
+			}
+			
+			/* for Squares */	
+			
+				
+			/* for Mobile phone */
+			@media only screen and (max-width:640px){
+			  body{
+				
+				background-color:black;
+				color:white;
+				}
+				
+				.second__row{
+				background-color:black;
+				color:white;
+				}
+				
+				
+			.squares{
+						width:100%;
+			}
+			.second__row{
+							width:100%;
+			}
+			.SquareTop{
+						width:100%;
+						
+			}
+			.square red opacity1{
+							width:100%;
+			}
+			
+			
+			@media screen and (max-width:320px){
+			.container{
+			           width:320px;
+			}	
+			}	
+				
+			
+				
+				/* for Tablet */
+			@media only screen and (max-width:959px){
+			.container{
+			           width:100%;
+					   
+			}	
+			
+			.squares{
+						width:50%;
+			}
+			.SquareTop{
+						width:25%;
+						
+			}
+			.square red opacity1{
+							width:25%;
+			}
+				
+			
+				
+				
+				
+			</style>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		</head>
+
+			<!-- Container-->
+			<div class="conatiner">
+
+				<!--5 circles in a row -->
+
+					<!-- 1st Row-->
+					<div class="first__row">
+
+						<!-- circles container-->
+						<div class="circles">
+							<!-- colored circles -->
+							<div class="CircleTop">
+								<!-- Red Circle -->
+								<div class="circle red opacity1">
+									<span class="CircleCopy"> Circle color is red</span>
+								</div>
+							</div>
+
+							<div class="CircleTop">
+								<!-- Green  Circle -->
+								<div class="circle green opacity1">
+									<span class="CircleCopy"> Circle color is green</span>
+								</div>
+							</div>
+
+							<div class="CircleTop">
+								<!-- Blue Circle -->
+								<div class="circle blue opacity1">
+									<span class="CircleCopy">Circle color is blue</span>
+								</div>
+							</div>
+
+							<div class="CircleTop">
+								<!-- Orange Circle -->
+								<div class="circle orange opacity1">
+									<span class="CircleCopy"> Circle color is orange</span>
+								</div>
+							</div>
+
+							<div class="CircleTop">
+								<!-- Yellow Circle -->
+								<div class="circle yellow opacity1">
+									<span class="CircleCopy"> Circle color is yellow</span>
+								</div>
+							</div>
+							<!-- // Colored circles -->
+						</div>
+						<!-- // circles container-->
+
+					</div>
+					<!-- // 1st Row -->
+				<!-- // 5 circles -->
+
+				<!--2nd row -->
+					<div class="second__row">
+
+						<!-- squares-->
+						<div class="squares">
+							<!-- colored squares -->
+							<div class="SquareTop">
+								<!-- Red square -->
+								<div class="square red opacity1">
+									<span class="SquareCopy"> Square color is red</span>
+								</div>
+							</div>
+
+							<div class="SquareTop">
+								<!-- Green square -->
+								<div class="square green opacity1">
+									<span class="SquareCopy"> Square color is green</span>
+								</div>
+							</div>
+
+							<div class="SquareTop">
+								<!-- Blue square -->
+								<div class="square blue opacity1">
+									<span class="SquareCopy">Square color is blue</span>
+								</div>
+							</div>
+
+							<div class="SquareTop">
+								<!-- Orange square -->
+								<div class="square orange opacity1">
+									<span class="SquareCopy"> Square color is orange</span>
+								</div>
+							</div>
+
+							<div class="SquareTop">
+								<!-- Yellow square -->
+								<div class="square yellow opacity1">
+									<span class="SquareCopy"> Square color is yellow</span>
+								</div>
+							</div>
+							<!-- // Colored squares -->
+						</div>
+						<!-- // squares-->
+
+					</div>
+				<!-- //2nd row -->
+			</div>
+			<!-- // Container-->
+
+			
+			<script type="text/javascript">
+			//Toggle opacity on active circles
+				$(".CircleTop").hover(function(){
+			    $( ".CircleTop" ).each(function() {
+			        $(this).children(".opacity1").toggleClass('opacity__half');
+			    });
+			    $(this).children(".opacity1").removeClass('opacity__half');
+			});
+			</script>
+
+			<script type="text/javascript">
+			//Toggle opacity on active squares
+				$(".SquareTop").hover(function(){
+			    $( ".SquareTop" ).each(function() {
+			        $(this).children(".opacity1").toggleClass('opacity__half');
+			    });
+			    $(this).children(".opacity1").removeClass('opacity__half');
+			});				
+			</script>
+
+			<script type="text/javascript">
+			$(document).ready(function(){
+			//hiding the 2nd row
+			$(".second__row").hide();
+
+			//showing the 2nd row of squares onclicking of 1st row
+			$('.first__row').click(function(){
+			$(".second__row").show();
+			$(".first__row").hide();
+			});
+
+			//showing the 1st row of squares onclicking of the 2nd row
+			$('.second__row').click(function(){
+			$(".first__row").show();
+			$(".second__row").hide();
+			});
+
+			});						
+			</script>			
+		</body>
+	</html>
